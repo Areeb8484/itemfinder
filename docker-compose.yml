@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  server:
+    build: ./server
+    ports:
+      - '5000:5000'
+    environment:
+      - PORT=5000
+      - CORS_ORIGIN=http://localhost:5173
+    restart: unless-stopped
+
+  client:
+    build: ./client
+    # The frontend is served by nginx inside the container on port 80
+    ports:
+      - '5173:80'
+    environment:
+      # Ensure the client knows where to reach the backend
+      - VITE_SERVER_URL=http://localhost:5000
+    depends_on:
+      - server
+    restart: unless-stopped
