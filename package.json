@@ -5,11 +5,11 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "build": "cd server && npm install --production",
-    "dev": "cd server && npm run dev",
-    "install-client": "cd client && npm install",
-    "install-server": "cd server && npm install",
-    "build-client": "cd client && npm run build"
+    "build": "npm install --prefix server --production",
+    "dev": "npm run dev --prefix server",
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install --prefix server",
+    "build-client": "npm run build --prefix client"
   },
   "engines": {
     "node": ">=18.0.0",

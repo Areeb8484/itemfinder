@@ -2,7 +2,7 @@
 nixPkgs = ['nodejs-18_x', 'npm']
 
 [phases.install]
-cmds = ['npm install', 'cd server && npm install --production']
+cmds = ['npm install --prefix server --production']
 
 [phases.build]
 cmds = []
