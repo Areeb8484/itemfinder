@@ -12,7 +12,7 @@
   status = 200
 
 [context.production.environment]
-  VITE_SERVER_URL = "https://itemfinder-production.up.railway.app"
+  VITE_SERVER_URL = "https://itemfinder-production-62d8.up.railway.app"
 
 [context.deploy-preview.environment]
-  VITE_SERVER_URL = "https://itemfinder-production.up.railway.app"
+  VITE_SERVER_URL = "https://itemfinder-production-62d8.up.railway.app"
