@@ -1,0 +1,33 @@
+{
+  "name": "itemfinder",
+  "version": "1.0.0",
+  "description": "Mobile Photo Challenge Game",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd server && npm install --production",
+    "dev": "cd server && npm run dev",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "build-client": "cd client && npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Areeb8484/itemfinder.git"
+  },
+  "keywords": [
+    "game",
+    "mobile",
+    "photo",
+    "challenge",
+    "react",
+    "nodejs",
+    "socket.io"
+  ],
+  "author": "Areeb8484",
+  "license": "MIT"
+}
